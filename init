@@ -2,11 +2,10 @@
 wlr-randr --output HDMI-A-1 --mode 1366x768 &
 riverctl default-layout rivertile &
 rivertile -view-padding 0 -outer-padding 0 &
-swaybg -i $HOME/.wallpaper/pixelwp.png -m fill &
 dbus-update-activation-environment DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=river &
 
 riverctl map normal Super Z spawn alacritty
-riverctl map normal Super R spawn kickoff
+riverctl map normal Super R spawn wmenu-run
 riverctl map normal Super C close
 riverctl map normal Super F toggle-float
 riverctl map normal Super+Shift Q exit
